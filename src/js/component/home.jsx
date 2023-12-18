@@ -1,13 +1,13 @@
 import React from "react";
-
+import SecondCounter from "./contador";
 //include images into your bundle
 
-import SecondCounter from "./contador";
+
 //create your first component
-const Home = () => {
+const Home = (props) => {
 	return (
 		<div className="text-center">
-		<SecondCounter />	
+		<SecondCounter  />	
 		</div>
 	);
 };
