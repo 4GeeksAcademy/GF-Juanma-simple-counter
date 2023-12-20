@@ -7,37 +7,38 @@ import "../styles/index.css";
 
 //import your own components
 import Home from "./component/home.jsx";
+import SecondCounter from "./component/contador.jsx";
 
-let segundos = 0;
-let segundos10 = 0;
-let segundos100= 0;
-let segundos1000= 0;
-let segundos10000 = 0;
-let segundos100000= 0;
+let segundos1 = 0;
+let segundos2 = 0;
+let segundos3= 0;
+let segundos4= 0;
+let segundos5 = 0;
+let segundos6= 0;
 
 //render your react application
 const contador = setInterval(() => {
-    if (segundos < 8) {
-        segundos += 1;
-    } else { segundos = 0 
-    if (segundos10 < 8) {
-        segundos10 += 1;
-    } else { segundos10 = 0 
-    if (segundos100 < 8) {
-        segundos100 += 1;
-    } else { segundos100 = 0 
-    if (segundos1000 < 8) {
-        segundos1000 += 1;
-    } else { segundos1000 = 0 
-    if (segundos10000 < 8) {
-        segundos10000 += 1
-    } else { segundos10000 = 0 
-    if (segundos100000 < 8) {
-        segundos100000 += 1;
-    } else { segundos100000 = 0 }}}}}}
+    if (segundos1 < 8) {
+        segundos1 += 1;
+    } else { segundos1 = 0 
+    if (segundos2 < 8) {
+        segundos2 += 1;
+    } else { segundos2 = 0 
+    if (segundos3 < 8) {
+        segundos3 += 1;
+    } else { segundos3 = 0 
+    if (segundos4 < 8) {
+        segundos4 += 1;
+    } else { segundos4 = 0 
+    if (segundos5 < 8) {
+        segundos5 += 1
+    } else { segundos5 = 0 
+    if (segundos6 < 8) {
+        segundos6 += 1;
+    } else { segundos6 = 0 }}}}}}
 
-console.log(segundos,segundos10,segundos100,segundos1000,segundos10000,segundos100000)
-    ReactDOM.render(<Home segundos={segundos} segundos10={segundos10} segundos100={segundos100} segundos1000={segundos1000} segundos10000={segundos10000} segundos100000={segundos100000}/>, document.querySelector("#app"));
+
+    ReactDOM.render(<Home segundos1={segundos1} segundos2={segundos2} segundos3={segundos3} segundos4={segundos4} segundos5={segundos5} segundos6={segundos6}/>, document.querySelector("#app"));
 }, 1000)
 
 

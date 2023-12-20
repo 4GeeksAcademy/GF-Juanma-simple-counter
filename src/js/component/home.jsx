@@ -7,7 +7,14 @@ import SecondCounter from "./contador";
 const Home = (props) => {
 	return (
 		<div className="text-center">
-		<SecondCounter  />	
+		<SecondCounter 
+		 segundos1= {props.segundos1}
+		 segundos2= {props.segundos2}
+		 segundos3= {props.segundos3}
+		 segundos4= {props.segundos4}
+		 segundos5= {props.segundos5}
+		 segundos6 ={props.segundos6}
+		 />	
 		</div>
 	);
 };
