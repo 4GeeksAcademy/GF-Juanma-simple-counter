@@ -18,6 +18,8 @@ let segundos6 = 0;
 
 //render your react application
 const Contador = setInterval(() => {
+    Alerta()
+    
     if (segundos1 < 9) {
         segundos1 += 1;
     } else {
@@ -25,7 +27,7 @@ const Contador = setInterval(() => {
         if (segundos2 < 9) {
             segundos2 += 1;
         } else {
-            segundos2 = 0
+            segundos2 = 0;
             if (segundos3 < 9) {
                 segundos3 += 1;
             } else {
@@ -46,14 +48,20 @@ const Contador = setInterval(() => {
             }
         }
     }
-
-
-    ReactDOM.render(<Home 
-        segundos1={segundos1} 
-        segundos2={segundos2} 
-        segundos3={segundos3} 
-        segundos4={segundos4} 
-        segundos5={segundos5} 
+    function Alerta() {
+        if (segundos1 === 0 && segundos2 === 1) {
+            return alert('Has llegado a 10');
+        }
+    };
+   
+   
+    ReactDOM.render(<Home
+        
+        segundos1={segundos1}
+        segundos2={segundos2}
+        segundos3={segundos3}
+        segundos4={segundos4}
+        segundos5={segundos5}
         segundos6={segundos6} />, document.querySelector("#app"));
 }, 1000)
 
